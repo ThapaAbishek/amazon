@@ -1,0 +1,225 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    background-color: #1f1f1f; /* Dark background color */
+    color: #ddd; /* Light text for good contrast */
+}
+
+/* Navbar Styles */
+.navbar {
+    background-color: #333; /* Darker navbar for contrast */
+    padding: 15px 0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.navbar .logo h2 {
+    color: #fff;
+    font-size: 24px;
+    text-align: center;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.nav-links li {
+    margin: 0 10px;
+    background-color: #333; /* Green color for the button */
+    padding: 8px 14px;
+    border-radius: 10px;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+}
+
+.nav-links li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.nav-links li:hover {
+    background-color: #45a049; /* Slightly darker green on hover */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Adding shadow on hover */
+}
+
+.nav-links li a:hover {
+    color: white;
+}
+/* Hero Section */
+.main{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+.hero {
+    background-image: url('https://imgs.search.brave.com/Zt9voekwWa5AITV4h2N9d6FdnnFCsNdCPFNrIYOIoJM/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pbWcu/ZnJlZXBpay5jb20v/cHJlbWl1bS1waG90/by8zZC1yZW5kZXIt/YW1hem9uLWxvZ28t/c2N1bHB0ZWQtdHJh/bnNsdWNlbnQtYW1i/ZXItZ2xhc3Mtc3Vz/cGVuZGVkLXdpdGgt/MTAtZGVncmVlLXRp/bHQtbmVvbi1vcmFf/MTAyMDQ5NS03ODM1/MTQuanBnP3NlbXQ9/YWlzX2h5YnJpZCZ3/PTc0MA'); /* Replace with actual image */
+    background-size: cover;
+    background-position: center;
+    padding: 120px 20px;
+    text-align: center;
+    color:black;
+    border-bottom: 2px solid #444;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    max-width: 60%; /* Ensure the hero section takes 60% of the page */
+}
+.hero h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+    color:white;
+}
+
+.hero p {
+    font-size: 1.3em;
+    margin-bottom: 30px;
+color:white;
+}
+
+.cta-btn {
+    background-color: #4CAF50; /* Green button */
+    color: white;
+    padding: 12px 25px;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.cta-btn:hover {
+    background-color: #45a049; /* Slightly darker green */
+}
+
+.cta-btn a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Main Content Section Layout */
+.content-wrapper {
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    justify-content: space-between;
+    gap: 20px;
+    margin-top: 50px;
+}
+
+/* Left Side Content */
+.company-overview {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 40%; /* Content width */
+    padding: 20px;
+}
+
+.company-overview .overview-box,
+.company-overview .d2c-model {
+    background-color: #2d2d2d; /* Slightly lighter than background */
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    width: 100%; /* Make it responsive */
+    text-align: center;
+    margin-bottom:20px;
+}
+
+.company-overview h2 {
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.company-overview ul {
+    list-style-type: disc;
+    padding-left: 20px;
+    text-align: left;
+    color: #aaa;
+}
+
+.company-overview .d2c-image {
+    max-width: 100%;
+    height: auto;
+    margin-top: 20px;
+}
+
+.company-overview .overview-box ul li {
+    margin-bottom: 10px;
+}
+
+
+.content-section {
+    padding: 50px 20px;
+    background-color: #222; /* Darker background for content */
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width: 80%;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    transform: translateY(8vh);
+}
+
+.content-section h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+.content-section p {
+    font-size: 1.1em;
+    line-height: 1.6;
+    color: #bbb;
+    margin: 20px 0;
+}
+
+/* Footer */
+footer {
+     background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-size: 14px;
+transform: translateY(16vw);
+}
+/* Link List Styles */
+.link-list {
+    background-color: #2d2d2d; /* Dark background for the link container */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 40px;
+}
+
+.link-list a {
+    color: #4CAF50; /* Green links */
+    text-decoration: none; /* Remove underline */
+    display: block;
+    margin-bottom: 10px; /* Add spacing between links */
+    font-size: 1.1em;
+    transition: color 0.3s ease, text-decoration 0.3s ease;
+}
+
+.link-list a:hover {
+    color: #fff; /* Change link color on hover */
+    text-decoration: underline; /* Underline on hover for interactivity */
+}
